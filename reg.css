@@ -9,6 +9,7 @@ body {
     border-left: 1px dotted grey;
 }
 h1, h2 {
+    font-weight: 300;
     width: 50vw;
     padding-bottom: .5%;
     border-bottom: 1px solid grey;
