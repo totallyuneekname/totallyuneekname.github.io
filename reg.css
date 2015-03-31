@@ -1,0 +1,15 @@
+body {
+    font-family: "Helvetica Neue";
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    height: 100vh;
+    padding-left: 3vw;
+    margin-left: 10vw;
+    border-left: 1px dotted grey;
+}
+h1, h2 {
+    width: 50vw;
+    padding-bottom: .5%;
+    border-bottom: 1px solid grey;
+}
