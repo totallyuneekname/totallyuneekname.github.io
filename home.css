@@ -17,10 +17,10 @@ body {
     letter-spacing: 4px;
 }
 .table {
-    float:right;
-    position:relative;
-    left:-50%;
-    text-align:left;
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
 }
 ul {
     list-style:none;
@@ -34,10 +34,10 @@ li {
     width: 10vw;
     height: 6vw;
 	border-radius: 50%;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 	margin-left: 3vw;
-	position:relative;
+	position: relative;
 }
 li:before {
     content: '';
@@ -46,27 +46,58 @@ li:before {
 	border-radius: 50%;
 	width: calc(10vw + 6px);
 	height: calc(10vw + 6px);
-	left:-3px;
-	top:-3px;
-	background: -moz-linear-gradient(#bababa 0%, #000 100%);
-	background: -webkit-gradient(linear, color-stop(0%,#bababa), color-stop(100%,#000));
-	background: -webkit-linear-gradient(#bababa 0%,#000 100%);
-	background: -o-linear-gradient(#bababa 0%,#000 100%);
-	background: -ms-linear-gradient(#bababa 0%,#000 100%);
-	background: linear-gradient(#bababa 0%,#000 100%);
+	left: -3px;
+	top: -3px;
+	background: -moz-linear-gradient(#919191 0%, #202020 100%);
+	background: -webkit-gradient(linear, color-stop(0%,#919191), color-stop(100%,#202020));
+	background: -webkit-linear-gradient(#919191 0%,#202020 100%);
+	background: -o-linear-gradient(#919191 0%,#202020 100%);
+	background: -ms-linear-gradient(#919191 0%,#202020 100%);
+	background: linear-gradient(#919191 0%,#202020 100%);
 }
-li:hover:before{
-    content: '';
-	position: absolute;
-	z-index: -1;
-	border-radius: 50%;
-	width: calc(10vw + 6px);
-	height: calc(10vw + 6px);
-	left:-3px;
-	top:-3px;
-	background: -moz-linear-gradient(-45deg, #bababa 0%, #000 100%);
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#bababa), color-stop(100%,#000));
-	background: -webkit-linear-gradient(-45deg, #bababa 0%,#000 100%);
-	background: -o-linear-gradient(-45deg, #bababa 0%,#000 100%);
-	background: -ms-linear-gradient(-45deg, #bababa 0%,#000 100%);
-	background: linear-gradient(135deg, #bababa 0%,#000 100%);
+/* // STILL BROKEN
+li:hover:before {
+    background: -moz-linear-gradient(#919191 0%, #202020 100%);
+    background: -webkit-gradient(linear, color-stop(0%,#919191), color-stop(100%,#202020));
+    background: -webkit-linear-gradient(#919191 0%,#202020 100%);
+    background: -o-linear-gradient(#919191 0%,#202020 100%);
+    background: -ms-linear-gradient(#919191 0%,#202020 100%);
+    background: linear-gradient(#919191 0%,#202020 100%);
+    -webkit-animation-name: HoverSpin;
+    -webkit-animation-duration: 500ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: HoverSpin;
+    -moz-animation-duration: 500ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-name: HoverSpin;
+    -ms-animation-duration: 500ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: ease-in-out;
+    animation-name: HoverSpin;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@-ms-keyframes HoverSpin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(180deg); }
+}
+@-moz-keyframes HoverSpin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(180deg); }
+}
+@-webkit-keyframes HoverSpin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(180deg); }
+}
+@keyframes HoverSpin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(180deg);
+    }
+} */
