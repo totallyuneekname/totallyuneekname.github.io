@@ -14,7 +14,12 @@ h1, h2 {
     padding-bottom: .5%;
     border-bottom: 1px solid grey;
 }
-img {
+.date {
+    color: grey;
+    font-weight: 300;
+    font-style: italic;
+}
+img .github {
     width: 16px;
 }
 a {
